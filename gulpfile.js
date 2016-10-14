@@ -1,4 +1,4 @@
-var gulp = require("gulp"),
+const gulp = require("gulp"),
     util = require("gulp-util"),
     sass = require("gulp-sass"),
     autoprefixer = require('gulp-autoprefixer'),
@@ -6,7 +6,7 @@ var gulp = require("gulp"),
     rename = require('gulp-rename'),
     log = util.log;
 
-var sassFiles = "assets/sass/**/*.scss";
+const sassFiles = "assets/sass/**/*.scss";
 
 gulp.task("sass", function(){
     gulp.src(sassFiles)
