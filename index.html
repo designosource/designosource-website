@@ -28,31 +28,81 @@
 
 </head>
 <body>
+<header class="header">
+    <div class="logo">
+    </div>
 
-    <div id="fullpage">
-        <div class="section">
-            <div class="wrap-back">
-                <div class="overlay"></div>
-                <div class="wrap-panel-content">
-                    <div class="designosource"><img src="public/img/designosource.svg" alt="Designosource"></div>
-                    <h1>Designo Scrum Method</h1>
-                    <div class="wrap-buttons">
-                        <a href="#"><div class="btn-case">View Case</div></a>
-                        <a href="#"><div class="btn-website">Visit Website</div></a>
-                    </div>
+    <nav>
+        <ul class="desktop-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+    </nav>
+
+    <a class="hamburger-menu">
+        <span class="hamburger-menu-icon"></span>
+    </a>
+</header>
+
+<nav>
+    <ul class="mobile-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+<div id="fullpage">
+    <div class="section">
+
+        <div class="wrap-back">
+
+            <div class="overlay"></div>
+
+            <div class="wrap-panel-content">
+                <div class="designosource"><img src="public/img/designosource.svg" alt="Designosource"></div>
+                <h1>Designo Scrum Method</h1>
+                <div class="wrap-buttons">
+                    <a href="#"><div class="btn-case">View Case</div></a>
+                    <a href="#"><div class="btn-website">Visit Website</div></a>
                 </div>
             </div>
         </div>
-        <div class="section">Some section</div>
-        <div class="section">Some section</div>
-        <div class="section">Some section</div>
     </div>
+    <div class="section">Some section</div>
+    <div class="section">Some section</div>
+    <div class="section">Some section</div>
+</div>
 
 <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 <script src="public/js/jquery.fullPage.min.js"></script>
 <script>
     $(document).ready(function() {
         $('#fullpage').fullpage();
+    });
+</script>
+<script>
+    jQuery(document).ready(function($){
+
+        // open/close primary navigation
+        $('.hamburger-menu').on('click', function(){
+
+            $('.hamburger-menu-icon').toggleClass('is-clicked');
+            $('.header').toggleClass('menu-is-open');
+
+            if( $('.mobile-nav').hasClass('is-visible') ) {
+                $('.mobile-nav').removeClass('is-visible').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',function(){
+                    $('body').removeClass('overflow-hidden');
+                });
+
+            } else {
+                $('.mobile-nav').addClass('is-visible').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',function(){
+                    $('body').addClass('overflow-hidden');
+                });
+            }
+        });
     });
 </script>
 </body>
