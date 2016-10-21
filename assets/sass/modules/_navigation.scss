@@ -4,6 +4,7 @@ nav ul li a {
   font-family: Lato, sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
+  font-weight: 300;
 }
 
 .header {
@@ -14,19 +15,21 @@ nav ul li a {
   height: 50px;
   width: 100%;
   z-index: 3;
+
+
 }
 
-.logo {
-  display: block;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
+.logo{
+  z-index: 999;
+
 }
 
 .logo img {
-  display: block;
+  width: 50px;
+  height: 50px;
+  padding-left: 5%;
+  padding-top: 10px;
+  z-index: 999;
 }
 
 .desktop-nav {
@@ -38,7 +41,8 @@ nav ul li a {
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
-  right: 10em;
+  right: 0;
+  margin-right: 75px;
   display: none;
 }
 .desktop-nav li {
@@ -49,7 +53,7 @@ nav ul li a {
   display: inline-block;
   color: white;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .hamburger-menu {
@@ -194,7 +198,8 @@ nav ul li a {
   background-color: $purple;
   z-index: 2;
   position: fixed;
-  opacity: 0.95;
+  opacity: 0.98;
+  padding-top: 18vh;
 }
 
 .overflow-hidden{
@@ -206,17 +211,43 @@ nav ul li a {
     display: block;
   }
 
-  .logo {
-    left: 2.6em;
-  }
+  .logo img{
+    width: 75px;
+    height: 75px;
+    padding-top: 0px;
 
+  }
   .header {
-    height: 80px;
     background: transparent;
+    margin-right: 75px;
+    margin-top: 60px;
+    height: 75px;
+
+
+
+  }
+  .header.is-fixed {
+    position: fixed;
+    top: -80px;
+    background-color: transparent;
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s;
+  }
+  .header.is-visible {
+    -webkit-transform: translate3d(0, 100%, 0);
+    -moz-transform: translate3d(0, 100%, 0);
+    -ms-transform: translate3d(0, 100%, 0);
+    -o-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  .header.menu-is-open {
+    background-color: transparent;
   }
   .hamburger-menu{
     display: none;
   }
+
 }
 
 @media only screen and (min-width: 1170px) {
@@ -231,7 +262,10 @@ nav ul li a {
     transform: translate3d(0, 0, 0);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    height: 75px;
+
   }
+
   .header.is-fixed {
     position: fixed;
     top: -80px;
