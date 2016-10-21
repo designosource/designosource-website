@@ -24,7 +24,7 @@
     bottom: 0;
     left: 0;
     margin-bottom: 60px;
-    margin-left: 75px;
+    margin-left: 5%;
     z-index: 99;
 }
 
@@ -154,4 +154,13 @@ h1
     color: #fff;
     background-color: #000;
     border: 2px solid #000;
+}
+@media (min-width: 768px) {
+
+    .wrap-panel-content
+    {
+
+        margin-left: 75px;
+    }
+
 }
