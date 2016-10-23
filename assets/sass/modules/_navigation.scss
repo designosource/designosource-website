@@ -141,7 +141,7 @@ nav ul li a {
   transform: rotate(225deg);
 }
 
-.mobile-nav {
+.navigation {
   position: fixed;
   left: 0;
   top: 0;
@@ -169,12 +169,12 @@ nav ul li a {
 }
 
 
-.mobile-nav ul {
+.navigation ul {
   margin-top: 10vh;
   padding-top: 5vh;
 }
 
-.mobile-nav li {
+.navigation li {
   font-weight: 300;
   margin: .2em 0;
   font-size: 1.9rem;
@@ -182,7 +182,7 @@ nav ul li a {
   padding-bottom: 1vh;
 }
 
-.mobile-nav a {
+.navigation a {
   display: inline-block;
   padding: .4em 1em;
   border-radius: 0.25em;
@@ -191,7 +191,7 @@ nav ul li a {
   transition: background 0.2s;
 }
 
-.mobile-nav.is-visible {
+.navigation.is-visible {
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
   -ms-transform: translateY(0);
@@ -209,9 +209,44 @@ nav ul li a {
 }
 
 @media (min-width: 768px) {
-  .desktop-nav {
+  .navigation {
+    position: fixed;
+    top: 50%;
+    bottom: auto;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-right: 75px;
+    text-align: right;
     display: block;
+    height: auto;
+    padding: 0px 0;
+
   }
+  .navigation li {
+    display: inline-block;
+    margin-left: 0.9em;
+    margin-right: 0.9em;
+    font-weight: 300;
+    font-size: 1.2rem;
+
+  }
+  .navigation li:last-child {
+    margin-right: 75px;
+
+  }
+
+  .navigation a {
+    display: inline-block;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 0px 0;
+
+  }
+
 
   .logo img{
     width: 75px;
