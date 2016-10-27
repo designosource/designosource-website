@@ -8,12 +8,12 @@ $(document).ready(function($){
 
         if( $('.navigation').hasClass('is-visible') ) {
             $('.navigation').removeClass('is-visible').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',function(){
-                $('body').removeClass('overflow-hidden');
+                $('body').unbind('touchmove');
             });
 
         } else {
             $('.navigation').addClass('is-visible').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',function(){
-                $('body').addClass('overflow-hidden');
+                $('body').bind('touchmove', function(e){e.preventDefault()});
             });
         }
     });

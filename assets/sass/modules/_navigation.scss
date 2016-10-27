@@ -32,29 +32,6 @@ nav ul li a {
   z-index: 999;
 }
 
-.desktop-nav {
-  position: absolute;
-  top: 50%;
-  bottom: auto;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-  right: 0;
-  margin-right: 75px;
-  display: none;
-}
-.desktop-nav li {
-  display: inline-block;
-  margin-left: 2.2em;
-}
-.desktop-nav a {
-  display: inline-block;
-  color: white;
-  text-transform: uppercase;
-  font-weight: 400;
-}
 
 .hamburger-menu {
   position: absolute;
@@ -197,16 +174,43 @@ nav ul li a {
   -ms-transform: translateY(0);
   -o-transform: translateY(0);
   transform: translateY(0);
-  background-color: $purple;
+  background-color: #22242a;
   z-index: 2;
   position: fixed;
-  opacity: 0.98;
   padding-top: 18vh;
 }
 
 .overflow-hidden{
   overflow: hidden;
+  height: 100%;
 }
+
+.navEffect:after {
+  backface-visibility: hidden;
+  border: 1px solid rgba(#fff, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+
+.navEffect:hover:after {
+  backface-visibility: hidden;
+  border-color: #fff;
+  transition: width 350ms ease-in-out;
+  width: 100%;
+}
+
+
+.navEffect:hover:after {
+  bottom: auto;
+  top: 5px;
+  width: 100%;
+}
+
 
 @media (min-width: 768px) {
   .navigation {
@@ -230,7 +234,9 @@ nav ul li a {
     margin-left: 0.9em;
     margin-right: 0.9em;
     font-weight: 300;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    letter-spacing: 2px;
+
 
   }
   .navigation li:last-child {
@@ -255,12 +261,18 @@ nav ul li a {
 
   }
   .header {
-    background: transparent;
-    margin-right: 75px;
-    margin-top: 60px;
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     height: 75px;
-
-
+    margin-top: 50px;
 
   }
   .header.is-fixed {
@@ -321,4 +333,15 @@ nav ul li a {
   .header.menu-is-open {
     background-color: transparent;
   }
+   ul li:hover{
+     -webkit-transition: linear 0.2s;
+     -moz-transition: linear 0.2s ;
+     -ms-transition: linear 0.2s ;
+     -o-transition: linear 0.2s ;
+     transition: linear 0.2s;
+  }
 }
+
+
+
+
