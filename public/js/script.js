@@ -14,6 +14,8 @@ $(document).ready(function($){
         } else {
             $('.navigation').addClass('is-visible').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',function(){
                 $('body').bind('touchmove', function(e){e.preventDefault()});
+                $.fn.fullpage.setAllowScrolling(false);
+                $.fn.fullpage.setKeyboardScrolling(false);
             });
         }
     });
