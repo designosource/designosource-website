@@ -8,6 +8,24 @@
     background-size: cover;
 }
 
+#panel1Background,
+#panel4Background
+{
+    background-image: url("../img/test1.jpg");
+}
+
+#panel2Background,
+#panel5Background
+{
+    background-image: url("../img/test2.png");
+}
+
+#panel3Background,
+#panel6Background
+{
+    background-image: url("../img/test3.jpg");
+}
+
 .overlay
 {
     position: absolute;
@@ -158,15 +176,30 @@ h1
     color: #fff;
     background-color: #000;
     border: 1px solid #000;
-
-
 }
-@media (min-width: 768px) {
 
+
+@media (min-width: 768px) {
     .wrap-panel-content
     {
-
         margin-left: 75px;
     }
 
+    #panel1Background,
+    #panel4Background
+    {
+        background-image: url("../img/test1.gif");
+    }
+
+    #panel2Background,
+    #panel5Background
+    {
+        background-image: url("../img/test2.gif");
+    }
+
+    #panel3Background,
+    #panel6Background
+    {
+        background-image: url("../img/test3.gif");
+    }
 }
