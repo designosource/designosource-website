@@ -1,0 +1,71 @@
+.fp-tableCell
+{vertical-align: top;}
+
+.wrap-backProject
+{
+  height: 75vh;
+  width: 100vw;
+  background-size: cover;
+  display: block;
+  position: relative;
+  background-position: top;
+  vertical-align: top;
+}
+
+.wrap-panel-content
+{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 60px;
+  margin-left: 5%;
+  z-index: 99;
+}
+
+.fp-tableCell > p
+{
+  padding-top: 15px;
+  width: 70%;
+  font-size: 1.2em;
+  line-height: 27px;
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+  font-weight: 600;
+}
+
+#projectBackground
+{
+  background-color: #fff;
+}
+
+.overlayProject
+{
+  position: absolute;
+  height: 75vh;
+  width: 100vw;
+  background-color: #000;
+  opacity: 0.5;
+  z-index: 9;
+}
+
+#projectHeader
+{
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+@media (min-width: 768px) {
+  .fp-tableCell > p
+  {
+    padding-top: 25px;
+    width: 60%;
+    font-size: 1.3em;
+    line-height: 27px;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+
+}
