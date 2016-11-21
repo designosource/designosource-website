@@ -3,27 +3,38 @@
     position: relative;
     height: 100vh;
     width: 100vw;
-    background-image: url("../img/back.jpg");
     background-position: center center;
     background-size: cover;
 }
 
-#panel1Background,
-#panel4Background
+.wb-doktercollemont
 {
-    background-image: url("../img/test1.jpg");
+    background-image: url("../img/projects.jpg");
 }
 
-#panel2Background,
-#panel5Background
+.wb-knowledgeflow
 {
-    background-image: url("../img/test2.png");
+    background-image: url("../img/projects.jpg");
 }
 
-#panel3Background,
-#panel6Background
+.wb-lcie
 {
-    background-image: url("../img/test3.jpg");
+    background-image: url("../img/projects.jpg");
+}
+
+.wb-ecards
+{
+    background-image: url("../img/projects.jpg");
+}
+
+.wb-weareimd
+{
+    background-image: url("../img/projects.jpg");
+}
+
+.wb-aptolist
+{
+    background-image: url("../img/projects.jpg");
 }
 
 .overlay

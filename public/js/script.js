@@ -19,4 +19,16 @@ $(document).ready(function($){
             });
         }
     });
+
+    // TYPEWRITER
+    $(function(){
+        $("#typed").typed({
+            strings: ["We deliver eggceptional work.", "Get to know us!", "Good design is good business."],
+            typeSpeed: 20,
+            backDelay: 1000,
+            loop: true,
+            contentType: 'html',
+            loopCount: false,
+        });
+    });
 });
