@@ -201,16 +201,27 @@
     <script>
         $(document).ready(function() {
             $('#fullpage').fullpage({
-                navigation: true
-            });
+                navigation: true,
 
+                onLeave: function(index, nextIndex, direction){
+                    // Hide arrow on last section
+                    if(nextIndex == 4)
+                    {
+                        $('.scroll-btn').hide();
+                    }
+                    else
+                    {
+                        $('.scroll-btn').show();
+                    }
+                }
+
+            });
         });
 
         // MOVE SECTION DWN
         $(".scroll-btn").click(function(){
         $.fn.fullpage.moveSectionDown();
         });
-
     </script>
 
 </body>
