@@ -1,4 +1,4 @@
-$(document).ready(function($){
+$(document).ready(function(){
 
     // open/close primary navigation
     $('.hamburger-menu').on('click', function(){
@@ -31,4 +31,5 @@ $(document).ready(function($){
             loopCount: false,
         });
     });
+
 });
