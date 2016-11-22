@@ -34,10 +34,11 @@
         <a class="hamburger-menu"><span class="hamburger-menu-icon"></span></a>
         <nav class="stroke">
             <ul class="navigation">
-                <li><a href="#">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Work</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a class="navEffect" href="index.html">Home</a></li>
+                <li><a class="navEffect" href="team.html">Team</a></li>
+                <li><a class="navEffect" href="workflow.html">Werkwijze</a></li>
+                <li><a class="navEffect" href="projects.html">Projecten</a></li>
+                <li><a class="navEffect" href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -145,20 +146,6 @@
             </div>
         </div>
 
-        <div class="section" id="about">
-            <div id="panel1Background" class="wrap-back">
-                <div class="overlay"></div>
-
-                <div class="wrap-panel-content">
-                    <div class="designosource"><img src="public/img/designosource.svg" alt="Designosource"></div>
-                    <h1>Designo Scrum Method</h1>
-                    <div class="wrap-buttons">
-                        <a href="about.html"><div class="btn-case">View Team</div></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <div class="section" id="work">
             <div id="panel2Background" class="wrap-back">
                 <div class="overlay"></div>
@@ -173,17 +160,6 @@
             </div>
         </div>
 
-        <div class="section" id="contact">
-            <div id="panel3Background" class="wrap-back">
-                <div class="overlay"></div>
-
-                <div class="wrap-panel-content">
-                    <div class="designosource"><img src="public/img/designosource.svg" alt="Designosource"></div>
-                    <h1>CONTACT us!</h1>
-                </div>
-            </div>
-        </div>
-
     </div>
 
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
@@ -191,7 +167,7 @@
     <script>
         $(document).ready(function() {
             $('#fullpage').fullpage({
-                continuousVertical: true
+                navigation: true
             });
 
         });

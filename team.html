@@ -7,10 +7,11 @@
     <meta name="description" content="">
     <meta name="theme-color" content="">
 
-    <title>Knowledgeflow</title>
+    <title>About</title>
 
-    <link rel="stylesheet" href="../public/css/reset.css">
-    <link rel="stylesheet" href="../public/css/style.min.css">
+    <link rel="stylesheet" href="public/css/reset.css">
+    <link rel="stylesheet" href="public/css/style.min.css">
+    <link rel="stylesheet" href="public/css/jquery.fullPage.css" />
 
     <meta property="og:title" content=""/>
     <meta property="og:type" content="website"/>
@@ -29,7 +30,7 @@
 <body>
 <header class="header">
     <div class="logo">
-        <a href="../index.html"><img src="../public/img/logo.png" alt="Logo Designosource"></a>
+        <a href="index.html"><img src="public/img/logo.png" alt="Logo Designosource"></a>
     </div>
 
     <a class="hamburger-menu">
@@ -37,11 +38,11 @@
     </a>
     <nav class="stroke">
         <ul class="navigation">
-            <li><a class="navEffect" href="../index.html">Home</a></li>
-            <li><a class="navEffect" href="../team.html">Team</a></li>
-            <li><a class="navEffect" href="../workflow.html">Werkwijze</a></li>
-            <li><a class="navEffect" href="../projects.html">Projecten</a></li>
-            <li><a class="navEffect" href="../contact.html">Contact</a></li>
+            <li><a class="navEffect" href="index.html">Home</a></li>
+            <li><a class="navEffect" href="team.html">Team</a></li>
+            <li><a class="navEffect" href="workflow.html">Werkwijze</a></li>
+            <li><a class="navEffect" href="projects.html">Projecten</a></li>
+            <li><a class="navEffect" href="contact.html">Contact</a></li>
         </ul>
     </nav>
 </header>
@@ -49,30 +50,40 @@
 
 <div id="fullpage">
     <div class="section">
-        <div id="panel1Background" class="wrap-back">
+        <div class="wrap-back">
             <div class="overlay"></div>
             <div class="wrap-panel-content">
-                <div class="designosource"><img src="../public/img/designosource.svg" alt="Designosource"></div>
-                <h1>Knowledgeflow</h1>
+                <div class="designosource"><img src="public/img/designosource.svg" alt="Designosource"></div>
+                <h1>TEAM + ABOUT</h1>
                 <div class="wrap-buttons">
-                    <a href="#"><div class="btn-case">View Projects</div></a>
-                    <a href="#"><div class="btn-website">Visit Website</div></a>
+                    <a href="#team"><div class="btn-case">View Team</div></a>
+                    <a href="#procedure"><div class="btn-website">View Procedure</div></a>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="team">
+        <div class="wrap-back" id="teamBackground">
+            <div class="overlay"></div>
+            <div class="wrap-panel-content">
+                <h1>TEAM</h1>
             </div>
         </div>
     </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-<script src="../public/js/jquery.fullPage.min.js"></script>
+<script src="public/js/jquery.fullPage.min.js"></script>
 <script>
     $(document).ready(function() {
         $('#fullpage').fullpage({
+            navigation: true
 
         });
 
     });
 </script>
-<script src="../public/js/script.js"></script>
+<script src="public/js/script.js"></script>
 </body>
 </html>
