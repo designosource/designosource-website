@@ -229,13 +229,46 @@ nav ul li a {
   .logo{
     margin-left: 75px;
   }
-
-  .logo img{
+  .logo a{
     width: 50px;
     padding-top: 0px;
     height: 100%;
 
   }
+  .logo img{
+    width: 50px;
+    padding-top: 0px;
+    height: 100%;
+    position: fixed;
+
+  }
+  .logo img:hover{
+    animation-name: moveLogo;
+    -webkit-animation-name: moveLogo;
+    -moz-animation-name: moveLogo;
+    -o-animation-name: moveLogo;
+    -ms-animation-name: moveLogo;
+    -webkit-animation-duration: 0.9s;
+    -moz-animation-duration: 0.9s;
+    -o-animation-duration: 0.9s;
+    animation-duration: 0.9s;
+  }
+
+  @keyframes moveLogo {
+    0% {
+      transform: rotate(0deg);
+    }
+    33%{
+      transform: rotate(6deg);
+    }
+    66%{
+      transform: rotate(-6deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
   .header {
     -webkit-transition: background-color 0.3s;
     -moz-transition: background-color 0.3s;
