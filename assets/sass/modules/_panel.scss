@@ -1,3 +1,6 @@
+body{
+    overflow-y: hidden;
+}
 .wrap-back
 {
     background-image: url("../img/back.jpg");
@@ -40,7 +43,7 @@
 
 #teamBackground
 {
-    background-image: url("../img/home.jpg");
+    background-image: url("../img/groepsfoto.jpg");
 }
 
 #procedureBackground
@@ -237,6 +240,9 @@ h1
 
 @media (min-width: 768px)
 {
+    body{
+        overflow-y: hidden;
+    }
     .wrap-panel-content
     {
         margin-left: 75px;
