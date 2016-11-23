@@ -64,7 +64,7 @@
     bottom: 0;
     left: 0;
     margin-bottom: 50px;
-    margin-left: 50px;
+    margin-left: 75px;
     z-index: 99;
 }
 
@@ -173,8 +173,8 @@ h1
     position: absolute;
     bottom: 0;
     right: 0;
-    margin-bottom: 50px;
-    margin-right: 50px;
+    margin-bottom: 60px;
+    margin-right: 6%;
     width: 40px;
     height: 40px;
     border: 2px solid #fff;
@@ -225,5 +225,9 @@ h1
     #panel6Background
     {
         background-image: url("../img/test3.gif");
+    }
+    .scroll-btn
+    {
+        margin-right: 75px;
     }
 }
