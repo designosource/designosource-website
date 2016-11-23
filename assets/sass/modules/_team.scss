@@ -1,3 +1,31 @@
+#team h1{
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
 #team h1 span{
   color: $green;
+}
+
+#team p{
+  color: #fff;
+  font-family: Lato, sans-serif;
+  margin-right: 6%;
+  font-size: 0.8rem;
+  line-height: 20px;
+  margin-bottom: 25px;
+  max-width: 450px;
+}
+
+@media(min-width: 768px){
+  #team h1{
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+  }
+  #team p{
+    margin-right: 75px;
+    max-width: 500px;
+    font-size: 1rem;
+    line-height: 25px;
+    margin-bottom: 25px;
+  }
 }
