@@ -268,6 +268,50 @@ nav ul li a {
       transform: rotate(0deg);
     }
   }
+  @-webkit-keyframes moveLogo {
+    0% {
+      transform: rotate(0deg);
+    }
+    33%{
+      transform: rotate(6deg);
+    }
+    66%{
+      transform: rotate(-6deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+  @-moz-keyframes moveLogo {
+    0% {
+      transform: rotate(0deg);
+    }
+    33%{
+      transform: rotate(6deg);
+    }
+    66%{
+      transform: rotate(-6deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+  @-o-keyframes moveLogo {
+    0% {
+      transform: rotate(0deg);
+    }
+    33%{
+      transform: rotate(6deg);
+    }
+    66%{
+      transform: rotate(-6deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
 
   .header {
     -webkit-transition: background-color 0.3s;
