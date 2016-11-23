@@ -5,7 +5,7 @@ nav ul li a {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 300;
-  font-size: 0.8rem;
+  font-size: 1.6rem;
 }
 
 .header {
@@ -270,6 +270,10 @@ nav ul li a {
   }
   .hamburger-menu{
     display: none;
+  }
+  nav ul li a {
+
+    font-size: 0.8rem;
   }
 
 }
