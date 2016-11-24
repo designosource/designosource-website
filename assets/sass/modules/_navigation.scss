@@ -350,8 +350,20 @@ nav ul li a {
     display: none;
   }
   nav ul li a {
-
     font-size: 0.8rem;
+  }
+
+  .navigation a::after {
+    display:block;
+    content:attr(title);
+    font-weight:bold;
+    height:1px;
+    padding-left: 7px;
+    padding-right: 7px;
+    color:transparent;
+    overflow:hidden;
+    visibility:hidden;
+    width: 100%;
   }
 
 }
@@ -391,18 +403,10 @@ nav ul li a {
     background-color: transparent;
   }
    ul li a:hover{
-     -webkit-transition: linear 0.2s;
-     -moz-transition: linear 0.2s ;
-     -ms-transition: linear 0.2s ;
-     -o-transition: linear 0.2s ;
-     transition: linear 0.2s;
-     -webkit-transform: scale(1.2);
-     -moz-transform: scale(1.2);
-     -ms-transform: scale(1.2);
-     -o-transform: scale(1.2);
-     transform: scale(1.2);
+
 
    }
+
 }
 
 

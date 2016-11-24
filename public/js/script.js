@@ -1,5 +1,10 @@
 $(document).ready(function(){
 
+    //navigation hover animation
+    $('ul li a').hover(function(){
+        $(this).shuffleLetters();
+
+    });
     // open/close primary navigation
     $('.hamburger-menu').on('click', function(){
 
