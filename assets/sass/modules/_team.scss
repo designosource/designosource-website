@@ -1,4 +1,7 @@
-
+#teamDetail{
+  padding-left: 6%;
+  padding-right: 6%;
+}
 #team h1{
   font-size: 1.4rem;
   margin-bottom: 15px;
@@ -16,8 +19,149 @@
   margin-bottom: 25px;
   max-width: 450px;
 }
+.fp-tableCell{
+  display: flex;
+
+}
+#owl{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+#owl .item{
+  margin: 80px 0px 40px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+
+}
+#owl .item img{
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  max-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+#teamDetail{
+  background-color: #222;
+}
+
+.owl-prev{
+  display: block;
+  padding: 0;
+  left: -10px;
+  width: 40px;
+  height: 40px;
+  background-repeat: repeat;
+  background-position: center center;
+  background-size: 100%;
+  position: absolute;
+  top: 50%;
+  font-size: 0;
+  text-indent: -9999;
+  -moz-transition: all 0.6s ease;
+  -webkit-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  color: #FFF;
+  background-image: url("../img/arrowLeft.svg");
+}
+.owl-prev:hover{
+  background-image: url("../img/arrowLeftGreen.svg");
+
+}
+.owl-next{
+  display: block;
+  padding: 0;
+  right: -10px;
+  width: 40px;
+  height: 40px;
+  background-repeat: repeat;
+  background-position: center center;
+  background-size: 100%;
+  position: absolute;
+  top: 50%;
+  font-size: 0;
+  text-indent: -9999;
+  -moz-transition: all 0.6s ease;
+  -webkit-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  color: #FFF;
+  background-image: url("../img/arrowRight.svg");
+
+}
+.owl-next:hover{
+  background-image: url("../img/arrowRightGreen.svg");
+
+}
+.owl-theme .owl-controls .owl-buttons div{
+  border-radius: 0px;
+  margin: 0;
+  padding: 0;
+  display: block;
+  opacity: 1;
+}
+
+
+.owl-buttons.owl-prev{
+  background-image: url("../img/arrowLeft.svg");
+
+}
+.name{
+  color: #fff;
+  letter-spacing: 2px;
+  font-family: Lato, sans-serif;
+  font-size: 1.1rem;
+  margin-top: 15px;
+  text-transform: uppercase;
+}
+
+.function{
+  color: $green;
+  letter-spacing: 5px;
+  font-family: Lato, sans-serif;
+  font-size: 0.8rem;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+ul.socialIcons{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+.twitter{
+  background-image: url("../img/twitter.svg");
+  height: 30px;
+  width: 30px;
+}
+
+.linkedin{
+  background-image: url("../img/arrow.png");
+  height: 30px;
+  width: 30px;
+  margin: 0 20px;
+}
+
+.website{
+  background-image: url("../img/arrow.png");
+  height: 30px;
+  width: 30px;
+}
+
 
 @media(min-width: 768px){
+  #teamDetail{
+    padding-left: 75px;
+    padding-right: 75px;
+  }
   #team h1{
     font-size: 2.3rem;
     margin-bottom: 20px;
@@ -28,5 +172,33 @@
     font-size: 1rem;
     line-height: 25px;
     margin-bottom: 25px;
+  }
+  #owl{
+    margin-top: 60px;
+
+  }
+  #owl .item{
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+
+  .owl-prev{
+    left: -40px
+  }
+  .owl-next {
+    right: -40px;
+  }
+  }
+@media(min-width: 1200px){
+  #owl{
+    margin-top: 100px;
+
+  }
+  #owl .item img{
+    max-width: 350px;
+    max-height: 350px;
+
   }
 }
