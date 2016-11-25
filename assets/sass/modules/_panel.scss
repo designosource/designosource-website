@@ -1,6 +1,3 @@
-body {
-    overflow-y: hidden;
-}
 
 #backgroundHome {
     background-image: url("../img/bg.png");
@@ -223,9 +220,7 @@ h1 {
 }
 
 @media (min-width: 768px) {
-    body {
-        overflow-y: hidden;
-    }
+
     .wrap-panel-content {
         margin-left: 75px;
     }
