@@ -30,8 +30,19 @@
   flex-direction: column;
   align-items: center;
 }
-#owl .owl-carousel.owl-theme.owl-team{
+.owl-carousel{
   display: flex;
+}
+.owl-theme{
+  display: flex;
+}
+
+.owl-team{
+  display: flex;
+}
+
+div#owl.owl-carousel.owl-theme.owl-team{
+  display: flex !important;
 }
 #owl .item{
   margin: 110px 0px 40px 0px;
