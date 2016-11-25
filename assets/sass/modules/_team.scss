@@ -30,16 +30,6 @@
   flex-direction: column;
   align-items: center;
 }
-.owl-carousel{
-  display: flex;
-}
-.owl-theme{
-  display: flex;
-}
-
-.owl-team{
-  display: flex;
-}
 
 div#owl.owl-carousel.owl-theme.owl-team{
   display: flex !important;
@@ -146,6 +136,7 @@ div#owl.owl-carousel.owl-theme.owl-team{
   margin-top: 10px;
   text-transform: uppercase;
   text-align: center;
+  line-height: 25px;
 
 }
 ul.socialIcons{
