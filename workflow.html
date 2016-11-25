@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="theme-color" content="">
 
-    <title>About</title>
+    <title>Werkwijze | Designosource</title>
 
     <link rel="stylesheet" href="public/css/reset.css">
     <link rel="stylesheet" href="public/css/style.min.css">
@@ -104,6 +104,7 @@
         TweenMax.to($(".top__first-headline"), 0.3, {x: 0, opacity: 1, delay: 1});
         TweenMax.to($(".top__second-headline"), 0.3, {x: 0, opacity: 1, delay: 1.4});
         TweenMax.to($(".top"), 0.5, {height: "80vh", delay: 1.8});
+        TweenMax.to($(".floating-block"), 10, {scale: 1.05, yoyo:true, repeat: true});
         setTimeout(function(){
             $(".workflow").css("overflow", "auto");
         }, 2100);     
