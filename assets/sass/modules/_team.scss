@@ -196,6 +196,16 @@ ul.socialIcons{
   width: 30px;
 }
 
+@media(min-width: 700px){
+  #owl .item img{
+    width: 100%;
+    height: 100%;
+    max-width: 250px;
+    max-height: 250px;
+
+
+  }
+}
 
 
 @media(min-width: 768px){
