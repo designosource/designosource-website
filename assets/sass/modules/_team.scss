@@ -56,8 +56,8 @@ div#owl.owl-carousel.owl-theme.owl-team{
 #owl .item img{
   width: 100%;
   height: 100%;
-  max-width: 300px;
-  max-height: 300px;
+  max-width: 250px;
+  max-height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -247,7 +247,7 @@ ul.socialIcons{
   .owl-next {
     right: -40px;
   }
-  }
+}
 @media(min-width: 1200px){
   #owl{
     margin-top: 100px;
