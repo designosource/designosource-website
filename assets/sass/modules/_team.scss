@@ -139,27 +139,52 @@
 }
 ul.socialIcons{
   display: flex;
-  justify-content: space-around;
-  margin-top: 10px;
+  justify-content: space-between;
+  margin-top: -35px;
 }
 .twitter{
+  height: 30px;
+  width: 30px;
+  margin: 0px 5px 0px 5px;
+
+}
+
+.twitter a{
+  display: block;
+  position: fixed;
   background-image: url("../img/twitter.svg");
   height: 30px;
   width: 30px;
 }
 
 .linkedin{
-  background-image: url("../img/arrow.png");
   height: 30px;
   width: 30px;
-  margin: 0 20px;
+  margin: 0px 5px 0px 5px;
+}
+
+.linkedin a{
+  display: block;
+  position: fixed;
+  background-image: url("../img/linkedin.svg");
+  height: 30px;
+  width: 30px;
 }
 
 .website{
-  background-image: url("../img/arrow.png");
+  height: 30px;
+  width: 30px;
+  margin: 0px 5px 0px 5px;
+}
+
+.website a{
+  display: block;
+  position: fixed;
+  background-image: url("../img/siteLink.svg");
   height: 30px;
   width: 30px;
 }
+
 
 
 @media(min-width: 768px){
@@ -188,6 +213,11 @@ ul.socialIcons{
 
   }
 
+  #owl .item img{
+    max-width: 250px;
+    max-height: 250px;
+
+  }
 
   .owl-prev{
     left: -40px
