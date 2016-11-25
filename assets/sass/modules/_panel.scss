@@ -1,6 +1,17 @@
 body{
     overflow-y: hidden;
 }
+
+#backgroundHome
+{
+    background-image: url("../img/bg.png");
+}
+
+#backgroundProject
+{
+    background-image: url("../img/bg2.png");
+}
+
 .wrap-back
 {
     background-image: url("../img/back.jpg");
@@ -265,6 +276,9 @@ h1
     {
         background-image: url("../img/test3.gif");
     }
+
+
+
     .scroll-btn
     {
         margin-right: 75px;
