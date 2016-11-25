@@ -150,6 +150,19 @@
 	box-sizing: border-box;
 }
 
+.floating-block__overlay
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #4776E6; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to top left, #4776E6 , #8E54E9); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to top left, #4776E6 , #8E54E9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	opacity: 0.8;
+}
+
 .floating-block--purple
 {
 	width: 30%;
