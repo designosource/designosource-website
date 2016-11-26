@@ -6,10 +6,3 @@
 @import "modules/team";
 @import "modules/workflow";
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
-
-@media(min-width: 768px){
-  body, html{
-    cursor: url("../img/cursorPointer.png"), auto;
-
-  }
-}

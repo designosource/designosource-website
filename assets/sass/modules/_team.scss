@@ -1,253 +1,156 @@
-#teamDetail{
-  padding-left: 6%;
-  padding-right: 6%;
-}
-#team h1{
-  font-size: 1.4rem;
-  margin-bottom: 15px;
-}
-#team h1 span{
-  color: $green;
-}
-
-#team p{
-  color: #fff;
-  font-family: Lato, sans-serif;
-  margin-right: 6%;
-  font-size: 0.8rem;
-  line-height: 20px;
-  margin-bottom: 25px;
-  max-width: 450px;
-}
-.fp-tableCell{
-  display: flex;
-
-}
-
-#owl{
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-
-div#owl.owl-carousel.owl-theme.owl-team{
-  display: flex !important;
-}
-#owl .item{
-  margin: 110px 0px 40px 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-
-
-}
-#owl .item img{
-  width: 100%;
-  height: 100%;
-  max-width: 250px;
-  max-height: 250px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-#teamDetail{
-  background-color: #6E3ED2;
-}
-
-.owl-prev{
-  display: block;
-  padding: 0;
-  left: -10px;
-  width: 40px;
-  height: 40px;
-  background-repeat: repeat;
-  background-position: center center;
-  background-size: 100%;
+.floating-block--team{
+  width: 80%;
   position: absolute;
-  top: 50%;
-  font-size: 0;
-  text-indent: -9999;
-  -moz-transition: all 0.6s ease;
-  -webkit-transition: all 0.6s ease;
-  -o-transition: all 0.6s ease;
-  transition: all 0.6s ease;
-  color: #FFF;
-  background-image: url("../img/arrowLeft.svg");
-}
-.owl-prev:hover{
-  background-image: url("../img/arrowLeftGreen.svg");
-
-}
-.owl-next{
-  display: block;
-  padding: 0;
-  right: -10px;
-  width: 40px;
-  height: 40px;
-  background-repeat: repeat;
-  background-position: center center;
-  background-size: 100%;
-  position: absolute;
-  top: 50%;
-  font-size: 0;
-  text-indent: -9999;
-  -moz-transition: all 0.6s ease;
-  -webkit-transition: all 0.6s ease;
-  -o-transition: all 0.6s ease;
-  transition: all 0.6s ease;
-  color: #FFF;
-  background-image: url("../img/arrowRight.svg");
-
-}
-.owl-next:hover{
-  background-image: url("../img/arrowRightGreen.svg");
-
-}
-.owl-theme .owl-controls .owl-buttons div{
-  border-radius: 0px;
-  margin: 0;
-  padding: 0;
-  display: block;
-  opacity: 1;
+  bottom: -210px;
+  right: 20px;
+  padding: 20px 30px;
+  background-color: $purple;
+  -webkit-box-shadow: 0px 0px 72px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 0px 72px 0px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 72px 0px rgba(0,0,0,0.5);
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
-
-.owl-buttons.owl-prev{
-  background-image: url("../img/arrowLeft.svg");
-
-}
-.name{
-  color: #fff;
-  letter-spacing: 2px;
-  font-family: Lato, sans-serif;
-  font-size: 1.1rem;
-  margin-top: 15px;
-  text-transform: uppercase;
-}
-
-.function{
-  color: $green;
-  letter-spacing: 5px;
-  font-family: Lato, sans-serif;
-  font-size: 0.8rem;
-  margin-top: 10px;
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 25px;
-
-}
-ul.socialIcons{
+.team-block{
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
-  margin-top: -35px;
+  flex-flow: row wrap;
+  width: 88%;
+  padding-left: 6%;
+  padding-right: 6%;
+  margin-top: 40px;
+  overflow: hidden;
 }
-.twitter{
-  height: 30px;
-  width: 30px;
-  margin: 0px 5px 0px 5px;
+
+.team-member{
+  width: 100%;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.team-member__image{
+  width: 100%;
+  height: auto;
+}
+
+.team-member__name{
+  font-family: "Lato", sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 12px;
 
 }
+
+.team-member__name{
+  font-family: "Lato", sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 12px;
+  color: #000;
+
+}
+
+.team-member__function{
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 8px;
+  color: $gray;
+  letter-spacing: 1px;
+
+}
+
+.team-member__social{
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
 
 .twitter a{
+  width: 30px;
+  height: 30px;
   display: block;
-  position: fixed;
-  background-image: url("../img/twitter.svg");
-  height: 30px;
-  width: 30px;
-}
+  background-image: url("../img/socialicons/twitter_gray.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 5px 0 5px;
 
-.linkedin{
-  height: 30px;
-  width: 30px;
-  margin: 0px 5px 0px 5px;
 }
 
 .linkedin a{
+  width: 30px;
+  height: 30px;
   display: block;
-  position: fixed;
-  background-image: url("../img/linkedin.svg");
-  height: 30px;
-  width: 30px;
-}
+  background-image: url("../img/socialicons/linkedin_gray.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 5px 0 5px;
 
-.website{
-  height: 30px;
-  width: 30px;
-  margin: 0px 5px 0px 5px;
+
 }
 
 .website a{
-  display: block;
-  position: fixed;
-  background-image: url("../img/siteLink.svg");
-  height: 30px;
   width: 30px;
+  height: 30px;
+  display: block;
+  background-image: url("../img/socialicons/web_gray.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 5px 0 5px;
+
+
 }
-
-@media(min-width: 700px){
-  #owl .item img{
-    width: 100%;
-    height: 100%;
-    max-width: 250px;
-    max-height: 250px;
-
-
-  }
-}
-
 
 @media(min-width: 768px){
-  #teamDetail{
-    padding-left: 75px;
-    padding-right: 75px;
+  .floating-block--team{
+    width: 550px;
+    position: absolute;
+    bottom: -170px;
+    right: 110px;
+    padding: 70px 70px;
+    background-color: $purple;
   }
-  #team h1{
-    font-size: 2.3rem;
-    margin-bottom: 20px;
-  }
-  #team p{
+
+  .team-block{
+    margin-left: 75px;
     margin-right: 75px;
-    max-width: 500px;
-    font-size: 1rem;
-    line-height: 25px;
-    margin-bottom: 25px;
+    margin-top: 150px;
+    width: calc(100% - 150px);
+    padding-left: 0px;
+    padding-right: 0px;
   }
-  #owl{
-    margin-top: 60px;
 
-  }
-  #owl .item{
-    display: flex;
-    justify-content: space-around;
+  .team-member{
+    width: 48%;
+    margin-left: 1%;
+    margin-right: 1%;
 
   }
 
-  #owl .item img{
-    max-width: 200px;
-    max-height: 200px;
-    height: 100%;
-    width: 100%
+  .team-member__image{
+    width: 100%;
+    height: auto;
   }
 
-  .owl-prev{
-    left: -40px
-  }
-  .owl-next {
-    right: -40px;
-  }
 }
-@media(min-width: 1200px){
-  #owl{
-    margin-top: 100px;
 
+@media (min-width: 1024px)  {
+  .team-block{
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-top: 180px;
+    width: calc(100% - 150px);
   }
-  #owl .item img{
-    max-width: 350px;
-    max-height: 350px;
+  .team-member{
+    width: 31%;
+    margin-left: 1%;
+    margin-right: 1%;
 
   }
 }
