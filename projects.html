@@ -71,11 +71,12 @@
 
 
 <div id="fullpage">
-    <div class="section">
-
+    <div class="section project">
+        <video data-autoplay data-keepplaying loop muted class="filmpje">
+            <source src="public/img/Contentpanel.mp4" type="video/mp4">
+        </video>
         <div class="wrap-back">
 
-            <div class="overlay"></div>
 
             <div class="wrap-panel-content">
                  <h1>Branding Designosource 6.0</h1>
@@ -86,11 +87,11 @@
         </div>
     </div>
 
-    <div class="section" id="project">
+    <div class="section project" id="project">
+        <video data-autoplay data-keepplaying loop muted class="filmpje">
+            <source src="public/img/Contentpanel.mp4" type="video/mp4">
+        </video>
         <div class="wrap-back" id="panel1Background">
-
-            <div class="overlay"></div>
-
             <div class="wrap-panel-content">
                <h1>Alles in Twitterland</h1>
                 <div class="wrap-buttons">
@@ -183,7 +184,10 @@
     $(document).ready(function() {
         $('#fullpage').fullpage({
             continuousVertical: true,
-            navigation: true
+            navigation: true,
+            afterRender: function(){
+                $('video').get(0).play();
+            }
         });
     });
 </script>
