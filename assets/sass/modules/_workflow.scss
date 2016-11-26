@@ -11,6 +11,7 @@
 	display: flex;
 	align-items: center;
 	position: relative;
+	overflow: hidden;
 }
 
 .top__bg
@@ -26,9 +27,6 @@
 	background-attachment: fixed;
 	opacity: 0;
 }
-
-
-
 
 .top__first-headline
 {
@@ -236,7 +234,7 @@
 	width: 100%;
 	padding-top: 30px;
 	padding-bottom: 30px;
-	background-color: #333;
+	background-color: #161616;
 	display: flex;
 	justify-content: space-between;
 }

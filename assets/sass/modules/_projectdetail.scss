@@ -1,0 +1,260 @@
+.top__content
+{
+	position: absolute;
+	bottom: 100px;
+	left: 0;
+	z-index: 99999;
+	width: 100%;
+}
+
+.top__bg__video
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.project-description
+{
+	padding-top: 150px;
+	padding-bottom: 150px;
+}
+
+.project-description__title, .title
+{
+	font-family: "Lato", sans-serif;
+	color: #333333;
+	font-size: 1.1rem;
+	letter-spacing: 1.9px;
+	line-height: 36px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+
+p
+{
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	color: #333333;
+	font-size: 0.9rem;
+	letter-spacing: 1.48px;
+	line-height: 36px;
+	width: 80%;
+}
+
+.project-photos
+{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	margin-bottom: 150px;
+}
+
+.project-photos__photo
+{
+	width: 49%;
+	height: 50vh;
+	min-height: 500px;
+	background-color: black;
+}
+
+.project-photos__photo:nth-child(odd)
+{
+	margin-left: 1%;
+}
+
+.project-photos__photo:nth-child(even)
+{
+	margin-right: 1%;
+}
+
+.project-photos__photo--big
+{
+	width: 100%;
+	margin-bottom: 1.5%;
+	margin-left: 0 !important;
+}
+
+.project-photos__floating
+{
+	width: 30%;
+	position: absolute;
+	top: 40%;
+	right: 150px;
+	padding: 100px 70px;
+	background-color: $purple;
+	-webkit-box-shadow: 0px 0px 72px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 0px 72px 0px rgba(0,0,0,0.5);
+	box-shadow: 0px 0px 72px 0px rgba(0,0,0,0.5);
+	box-sizing: border-box;
+}
+
+.project-photos__floating__title
+{
+	font-family: "Lato", sans-serif;
+	color: #333333;
+	font-size: 1.1rem;
+	letter-spacing: 1.9px;
+	line-height: 36px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+	color: white;
+}
+
+.project-photos__floating__text
+{
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	color: #333333;
+	font-size: 0.9rem;
+	letter-spacing: 1.48px;
+	line-height: 36px;
+	width: 100%;
+	color: white;
+}
+
+.project-photos__floating__text--quote
+{
+	font-size: 2.4rem;
+	line-height: 3.6rem;
+	font-weight: 600;
+}
+
+.project-detail
+{
+	background-color: #333;
+	// background-image: url(../img/bg_blurry.png);
+	// background-size: cover;
+	// background-position: center;
+	// background-attachment: fixed;
+	width: 100%;
+	padding-top: 500px;
+	padding-bottom: 150px;
+	margin-top: -500px;
+}
+
+.grid
+{
+	display: flex;
+}
+
+.project-detail__col
+{
+	width: 49%;
+}
+
+.project-detail__col:nth-child(even)
+{
+	margin-left: 1%;
+}
+
+.project-detail__col:nth-child(odd)
+{
+	margin-right: 1%;
+}
+
+.project-detail__content p
+{
+	color: white;
+}
+
+.project-detail__content
+{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	min-height: 600px;
+	display: flex;
+	align-items: center;
+}
+
+.project-detail__col__image
+{
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+}
+
+.project-footer
+{
+	width: 100%;
+	display: flex;
+}
+
+.project-footer__overlay
+{
+	background-color: black;
+	opacity: 0.7;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.project-footer__subtitle
+{
+	color: white;
+	font-size: 0.9rem;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	display: block;
+	font-family: 'Lato', sans-serif;
+	font-weight: 500;
+	width: 100%;
+	position: relative;
+	z-index: 9999;
+}
+
+.project-footer__title
+{
+	color: white;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	display: block;
+	font-family: 'Lato', sans-serif;
+	font-weight: 500;
+	width: 100%;
+	position: relative;
+	z-index: 9999;
+	margin-top: 20px;
+}
+
+.project-footer__next
+{
+	width: 50%;
+	background-image: url(../img/bg.png);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	padding: 150px 100px;
+	text-align: right;
+}
+
+.project-footer__prev
+{
+	width: 50%;
+	background-image: url(../img/bg.png);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	padding: 150px 100px;
+}
+
+.btn-case--green
+{
+	border-color: $green;
+	color: $green;
+}
+
+.btn-case--green:hover
+{
+	background-color: $green;
+}
