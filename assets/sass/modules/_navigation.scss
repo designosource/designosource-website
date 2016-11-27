@@ -24,7 +24,7 @@ nav ul li a {
 
 .logo{
   z-index: 999;
-  margin-left: 5%;
+  margin-left: 25px;
   padding-top: 15px;
 }
 
@@ -35,7 +35,6 @@ nav ul li a {
 
 }
 
-
 .hamburger-menu {
   position: absolute;
   right: 0;
@@ -45,8 +44,7 @@ nav ul li a {
   background-color: transparent;
   z-index: 9999;
   cursor: pointer;
-  padding-right: 6%;
-
+  padding-right: 25px;
 }
 
 .hamburger-menu .cd-menu-text {
@@ -188,6 +186,11 @@ nav ul li a {
 
 
 @media (min-width: 768px) {
+  #activeURL
+  {
+    color: #00FFCA;
+  }
+
   .navigation {
     position: fixed;
     top: 50%;
@@ -243,76 +246,6 @@ nav ul li a {
     height: 100%;
     position: fixed;
 
-  }
-  .logo img:hover{
-    animation-name: moveLogo;
-    -webkit-animation-name: moveLogo;
-    -moz-animation-name: moveLogo;
-    -o-animation-name: moveLogo;
-    -ms-animation-name: moveLogo;
-    -webkit-animation-duration: 0.9s;
-    -moz-animation-duration: 0.9s;
-    -o-animation-duration: 0.9s;
-    animation-duration: 0.9s;
-  }
-
-  @keyframes moveLogo {
-    0% {
-      transform: rotate(0deg);
-    }
-    33%{
-      transform: rotate(6deg);
-    }
-    66%{
-      transform: rotate(-6deg);
-    }
-    100% {
-      transform: rotate(0deg);
-    }
-  }
-  @-webkit-keyframes moveLogo {
-    0% {
-      transform: rotate(0deg);
-    }
-    33%{
-      transform: rotate(6deg);
-    }
-    66%{
-      transform: rotate(-6deg);
-    }
-    100% {
-      transform: rotate(0deg);
-    }
-  }
-
-  @-moz-keyframes moveLogo {
-    0% {
-      transform: rotate(0deg);
-    }
-    33%{
-      transform: rotate(6deg);
-    }
-    66%{
-      transform: rotate(-6deg);
-    }
-    100% {
-      transform: rotate(0deg);
-    }
-  }
-
-  @-o-keyframes moveLogo {
-    0% {
-      transform: rotate(0deg);
-    }
-    33%{
-      transform: rotate(6deg);
-    }
-    66%{
-      transform: rotate(-6deg);
-    }
-    100% {
-      transform: rotate(0deg);
-    }
   }
 
   .header {
@@ -410,7 +343,3 @@ nav ul li a {
    }
 
 }
-
-
-
-
