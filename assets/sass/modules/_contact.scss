@@ -1,6 +1,9 @@
 .contactContainer
 {
     background-image: url("../img/contact/contact_bg.png");
+  background-position: center center;
+  background-size: cover;
+  position: relative;
     width: 100vw;
     height: 100vh;
     color: white;
@@ -24,7 +27,7 @@
 
 .contactInfoPart1
 {
-  padding-top: 35vh;
+  padding-top: 30vh;
 }
 
 .contactInfoPart2
@@ -36,6 +39,7 @@ margin-top: 60px;
 {
   font-size: 2em;
   font-weight: bold;
+
 }
 
 .contactInfoPart1 > h3
@@ -49,6 +53,7 @@ margin-top: 60px;
 .contactInfoPart2 > h4
 {
   font-size: 1.1em;
+
 }
 
 .contactInfoPart2 > p
@@ -65,7 +70,7 @@ margin-top: 60px;
     letter-spacing: 1px;
     font-size: 2.5rem;
     width: 75%;
-    padding-top: 50vh;
+    padding-top: 40vh;
     margin-left: auto;
     margin-right:auto;
     text-align: center;
@@ -76,8 +81,10 @@ margin-top: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 30vh;
-    width: 100%;
+    margin-top: 31vh;
+    width: 95%;
+    margin-left: auto;
+    margin-right:auto;
   }
 
   .contactInfoPart1,
