@@ -47,6 +47,10 @@
     <meta name="twitter:site" content="@designosource"/>
     <meta name="twitter:description" content=""/>
 
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
     <script>
         (function(h,o,t,j,a,r){
             h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
@@ -65,7 +69,6 @@
         <a class="hamburger-menu"><span class="hamburger-menu-icon"></span></a>
         <nav class="stroke">
             <ul class="navigation">
-                <li><a class="navEffect" title="Home" href="index.html">Home</a></li>
                 <li><a class="navEffect" title="Team" href="team.html">Team</a></li>
                 <li><a class="navEffect" title="Werkwijse" href="workflow.html">Werkwijze</a></li>
                 <li><a class="navEffect" title="Projecten" href="projects.html">Projecten</a></li>
@@ -81,40 +84,8 @@
                 <div class="wrap-panel-content">
                     <h1>HIER MOET NOG TEKST</h1>
                     <div class="wrap-buttons">
-                        <a href="team.html"><div class="btn-case">Checkout our team</div></a>
+                        <a href="team.html"><div class="btn-case">Ontdek onze projecten</div></a>
                     </div>
-                </div>
-                <div class="scroll-btn">
-                    <div class="image-scroll"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="section" id="work">
-            <div id="backgroundProject" class="wrap-back">
-                <div class="overlay"></div>
-                <div class="wrap-panel-content">
-                    <h1>HIER MOET NOG TEKST</h1>
-                    <div class="wrap-buttons">
-                        <a href="projects.html"><div class="btn-case">Checkout our projects</div></a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="section" id="home">
-            <div id="backgroundHome" class="wrap-back">
-                <div class="overlay"></div>
-                <div class="wrap-panel-content">
-                    <div class="designosource"><img src="public/img/designosource.svg" alt="Designosource"></div>
-                    <h1>HIER KOMT NOG TEKST</h1>
-                    <div class="wrap-buttons">
-                        <a href="workflow.html"><div class="btn-case">Onze werkwijze</div></a>
-                    </div>
-                </div>
-                <div class="scroll-btn">
-                    <div class="image-scroll"></div>
                 </div>
             </div>
         </div>
@@ -127,8 +98,6 @@
     <script>
         $(document).ready(function() {
             $('#fullpage').fullpage({
-                navigation: true,
-
                 onLeave: function(index, nextIndex, direction){
                     // Hide arrow on last section
                     if(nextIndex == 4)
