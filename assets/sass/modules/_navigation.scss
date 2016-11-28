@@ -185,6 +185,8 @@ nav ul li a {
 
 
 
+
+
 @media (min-width: 768px) {
   #activeURL
   {
@@ -342,4 +344,14 @@ nav ul li a {
 
    }
 
+}
+/*IE 10 and higher fix*/
+@media screen and(-ms-high-contrast: active), (-ms-high-contrast: none){
+  .navigation{
+    margin-top: 50px;
+    height: 100%;
+  }
+  .logo{
+    margin-top: -48vh;
+  }
 }
