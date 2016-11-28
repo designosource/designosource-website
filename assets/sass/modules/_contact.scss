@@ -5,14 +5,29 @@
   background-size: cover;
   position: relative;
     width: 100vw;
-    height: 100vh;
+    height: 75vh;
     color: white;
 }
 
 .type-wrap
 {
-  font-family: Lato, sans-serif;
   display: none;
+}
+
+.quoteFixed
+{
+  position: relative;
+  height: 30px;
+  top: 12%;
+  margin-top: -50px;
+  color: #00FFCA;
+  font-weight: 500;
+  font-size: 2em;
+  margin-left:25px;
+  margin-right: 25px;
+  line-height: 1.2em;
+  font-family: Lato, sans-serif;
+  text-transform: uppercase;
 }
 
 #typed
@@ -21,18 +36,12 @@
   font-weight: bold;
 }
 
-#contactEmail
+#blockContact
 {
-  display: none;
-}
-
-#contactBlockPurple
-{
-  padding: 35px 25px;
-  top: 50%;
-  display: block;
-  height: 150px;
-  margin-top: -75px;
+  top:70%;
+  height: 230px;
+  width: 90%;
+  left: 5%;
 }
 
 .contactInfoPart1,
@@ -81,6 +90,11 @@
 }
 
 @media (min-width: 768px) {
+  .quoteFixed
+  {
+    display: none;
+  }
+
   .type-wrap
   {
     display: block;
@@ -125,20 +139,9 @@
 }
 
 @media (max-height: 450px) {
-  #contactBlockPurple
+  .contactContainer
   {
-    display: none;
-  }
-
-  .contactInfoPart2
-  {
-    top: 50%;
-    margin-top: -50px;
-  }
-
-  #contactEmail
-  {
-    display: block;
+    height: 100vh;
   }
 }
 
